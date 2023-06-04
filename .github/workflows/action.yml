@@ -32,6 +32,8 @@ jobs:
          # json2xml-cli -i axe-results.json -t xml -o accessibility-report.xml
 
       - name: Upload accessibility report
+        run: |
+          echo 'XML generated report is updated'
        # uses: actions/upload-artifact@v2
       #  with:
         #  name: Accessibility Report
