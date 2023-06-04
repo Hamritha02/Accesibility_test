@@ -25,13 +25,14 @@ jobs:
            echo 'test run executed'
        # run: npx axe-cli --config axe-config.json --exit
 
-      - name: Convert report to XML
-        run: |
-          npm install -g json2xml-cli
-          json2xml-cli -i axe-results.json -t xml -o accessibility-report.xml
+     # - name: Convert report to XML
+     #   run: |
+       #    echo 'Project pat
+        #  npm install -g json2xml-cli
+         # json2xml-cli -i axe-results.json -t xml -o accessibility-report.xml
 
       - name: Upload accessibility report
         uses: actions/upload-artifact@v2
         with:
           name: Accessibility Report
-          path: accessibility-report.xml
+         # path: accessibility-report.xml
